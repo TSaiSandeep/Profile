@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    img{
+      border-radius: 5px;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('pitch2.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 5px;
+    }
+    ul{
+			padding-left: 120px;
+			margin:0;
+			list-style:none;
+			display:flex;
+		}
+		ul li{
+			font-size: 15em;
+			letter-spacing: 10px;
+			text-shadow: 1px 5px 10px #000042;
+		}
+		ul li:nth-child(1){
+			/* color:#0b0b0b; */
+      color:#ffffff;
+		}
+		ul li:nth-child(2){
+      /* color:#2255A4; */
+      color:#1365e0;
+
+		}
+		@font-face {
+			font-family: "MemphisRiver";
+			src: url(fonts/MemphisRiver.ttf) format("truetype");
+		}
+		@font-face {
+			font-family: "Roblox";
+			src: url(fonts/Roblox-Font-Regular.ttf) format("truetype");
+			font-weight: normal;
+		}
+		@font-face {
+			font-family: "Roblox";
+			src: url(fonts/Roblox-Font-Regular.ttf) format("truetype");
+			font-weight: bold;
+		} 
+
+    /* .header {
+    text-align: center;
+    padding: 32px;
+    } */
+    .row {
+        display: -ms-flexbox; 
+        display: flex;
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;
+        padding-left: 40px;
+    }
+    @media screen and (max-width: 576px) {
+        .row {
+            display: block;
+            max-width: none;
+        }
+
+        .column {
+            flex-basis: 100%;
+            margin: 10px 0;
+        }
+        ul{
+          font-size: 0.7vw;
+        }
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 768px) {
+        .column {
+            flex-basis: calc(50% - 20px);
+        }
+        ul{
+          font-size: 0.9vw;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        .column {
+            flex-basis: calc(33.33% - 20px);
+        }
+        ul{
+          font-size: 0.95vw;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .column {
+            flex-basis: calc(25% - 20px);
+        }
+        ul{
+          font-size: 1.19vw;
+        }
+    }
+
+    .column img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.5s;
+      }
+
+    .column img:hover {
+      filter: grayscale(100%);
+    }
+    .column.active img {
+      filter: brightness(150%);
+    }
+/* Create two equal columns that sits next to each other */
+/* .column {
+  -ms-flex: 50%; 
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+} */
+
+/* Style the buttons */
+/* .btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+} */
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="logo" align="center">
+  <!-- <h1 align="Center">Footket</h1> -->
+  <ul>
+    <li>Foot</li>
+    <li>ckeT</li>
+  </ul>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="image1.jpg" alt="Image 1" style="width:100%">
+    <img src="image2.jpg" alt="Image 2" style="width:100%">
+    <img src="photo-soccer_1.jpg" alt="Image 3" style="width:100%">
+    <img src="lionel-messibarcelona_1.jpg" alt="Image 4" style="width:100%">
+    <img src="image20.jpg" alt="Image 20" style="width:100%">
+
+  </div>
+  <div style="padding: 3px;"></div>
+  <div class="column">
+    <img src="image5.jpg" alt="Image 5" style="width:100%">
+    <img src="image6.jpg" alt="Image 6" style="width:100%">
+    <img src="image7.jpg" alt="Image 7" style="width:100%">
+    <img src="image8.jpg" alt="Image 8" style="width:100%">
+    <img src="image19_1.jpg" alt="Image 19" style="width:100%">
+
+  </div> 
+  <div style="padding: 3px;"></div> 
+  <div class="column">
+    <img src="image9.jpg" alt="Image 9" style="width:100%">
+    <img src="image10.jpg" alt="Image 10" style="width:100%">
+    <img src="image11.jpg" alt="Image 11" style="width:100%">
+    <img src="msd_1.jpg" alt="Image 12" style="width:100%">
+    <img src="image18_1.jpg" alt="Image 18" style="width:100%">
+  </div>
+  <div style="padding: 3px;"></div>
+  <div class="column">
+    <img src="image13.jpg" alt="Image 13" style="width:100%">
+    <img src="image14.jpg" alt="Image 14" style="width:100%">
+    <img src="image15.jpg" alt="Image 15" style="width:100%">
+    <img src="image16.jpg" alt="Image 16" style="width:100%">
+    <img src="image17.jpg" alt="Image 17" style="width:100%">
+  </div>
+  <div style="padding: 3px;"></div>
+</div>
+</body>
+<script>
+  const gridItems = document.querySelectorAll('.column');
+  gridItems.forEach(item => {
+    item.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      item.classList.toggle('active');
+    });
+  });
+      // select all the images
+    var images = document.querySelectorAll('.img');
+
+    // iterate over each image and add a context menu event listener
+    for (var i = 0; i < images.length; i++) {
+      images[i].addEventListener('contextmenu', function(e) {
+        // prevent the default context menu from showing
+        e.preventDefault();
+        // get the image element
+        var img = this;
+        // create a canvas element
+        var canvas = document.createElement('canvas');
+        // set the canvas size to the image size
+        canvas.width = img.width;
+        canvas.height = img.height;
+        // draw the image on the canvas
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        // convert the image to grayscale
+        var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < imgData.data.length; i += 4) {
+          var gray = imgData.data[i] * 0.299 + imgData.data[i + 1] * 0.587 + imgData.data[i + 2] * 0.114;
+          imgData.data[i] = gray;
+          imgData.data[i + 1] = gray;
+          imgData.data[i + 2] = gray;
+        }
+        // put the modified image data back on the canvas
+        ctx.putImageData(imgData, 0, 0);
+        // set the image source to the canvas data URL
+        img.src = canvas.toDataURL();
+      });
+    }
+</script>
+</html>
