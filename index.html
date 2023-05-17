@@ -1,4 +1,590 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!--=============== Remixicons ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== Swiper Css ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--=============== Css ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/skins/color-1.css" />
+
+    <!--=============== Skin Colors ===============-->
+    <link
+      rel="stylesheet"
+      href="assets/css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link active-link">Hello</a>
+            </li>
+            <li>
+              <a href="#certificates" class="nav__link">Services</a>
+            </li>
+            <li>
+              <a href="#resume" class="nav__link">Resume</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <!-- <li>
+              <a href="#blog" class="nav__link">Blog</a>
+            </li> -->
+            <li>
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== Main ===============-->
+    <main class="main">
+      <!--=============== Home ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="../John Anderson - Starter/assets/img/SaiSandeep Photo.jpg" alt="" class="home__img" />
+          <div class="home__data">
+            <h1 class="home__name">SaiSandeep</h1>
+            <p class="home__work">Student</p>
+            <dl class="home__list">
+              <dt>AGE:</dt>
+              <dd>20</dd>
+              <dt>PHONE:</dt>
+              <dd>8 (234) 456-33-33</dd>
+              <dt>EMAIL:</dt>
+              <dd>saisandeeptamiri@gmail.com</dd>
+              <!-- <dt>ADDRESS:</dt>
+              <dd>Melbourne Victoria 3000 Australiak/dd></dd> -->
+            </dl>
+            <div class="home__socials">
+              <a href="https://www.linkedin.com/in/sai-sandeep-926317213/" target="_blank" class="home__social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://github.com/TSaiSandeep" target="_blank" class="home__social-link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="" target="_blank" class="home_social-link">
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Hello ===============-->
+      <section class="hello section container">
+        <h2 class="section__title">Hi_</h2>
+        <p class="hello__details text-lg">
+          I'm Undergraduate student with a degree in computer science (artificial intelligence), possessing a strong
+          understanding of programming languages such as Python and Java, as well as good at problem-solving, teamwork,
+          and communication. Passion for creating efficient and effective software solutions, combined with my commitment
+          to applying skills, learning, and collaborating with cross-functional teams. Constantly seeking new ways to improve
+          my abilities and stay current with the latest industry developments.
+        </p>
+        <a href="" class="button button--flex text-sm"
+          ><i class="ri-download-line"></i> DOWNLOAD CV
+        </a>
+      </section>
+
+      <!--=============== Services ===============-->
+      <section class="services section container" id="certificates">
+        <h2 class="section__title">Certificates_</h2>
+        <div class="services__container grid">
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="assets/img/web-design.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <h3 class="services__title text-lg">Machinelearning</h3>
+            <p class="services__detail">
+              Machine Learning Course From Stanford University - Coursera
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img src="assets/img/laptop.png" alt="" class="services__icon" />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <h3 class="services__title text-lg">Project Management</h3>
+            <p class="services__detail">
+              Project Management From Google - Coursera.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="assets/img/paint-palette.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <h3 class="services__title text-lg">Python</h3>
+            <p class="services__detail">
+              Introduction to Programming using Python - Kaggle
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="assets/img/smartphone-call.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <h3 class="services__title text-lg">DeepLearning</h3>
+            <p class="services__detail">
+              Fundamentals Of Deep Learning - Nvidia
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="assets/img/verified.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <h3 class="services__title text-lg">DeepLearning</h3>
+            <p class="services__detail">
+              DeepLearning in python - DataCamp
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="assets/img/operator.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <h3 class="services__title text-lg">RNN</h3>
+            <p class="services__detail">
+              Recurrent Neural Network for language modelling in python - DataCamp
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Resume ===============-->
+      <section class="section container" id="resume">
+        <h2 class="section__title">Resume_</h2>
+
+        <div class="resume__container grid">
+          <div class="resume__data">
+            <h3 class="resume__title text-sm">EDUCATION</h3>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">University</h3>
+              <p class="resume__date text-sm">2020 - 2024</p>
+              <p class="resume__description text-lg">
+                Bachelor Of Computer Science Engineering
+              </p>
+            </div>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">Fiitjee Junior College</h3>
+              <p class="resume__date text-sm">2018 - 2020</p>
+              <p class="resume__description text-lg">M.P.C</p>
+            </div>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">SriChaitanyaSchool</h3>
+              <p class="resume__date text-sm">2015-2018</p>
+              <p class="resume__description text-lg"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Skills ===============-->
+      <section class="section container">
+        <h2 class="section__title">Skills_</h2>
+
+        <div class="skills container grid">
+          <div class="skills__content">
+            <!-- <h3 class="skills__title text-sm">FRONTEND</h3> -->
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name test-sm">HTML</p>
+                  <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name test-sm">CSS</p>
+                  <span class="skills__number text-sm">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name test-sm">JAVASCRIPT</p>
+                  <span class="skills__number text-sm">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 60%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name test-sm">REACT</p>
+                  <span class="skills__number text-sm">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name test-sm">Python</p>
+                  <span class="skills__number text-sm">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name test-sm">MySQL</p>
+                  <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Projects ===============-->
+      <section class="work section container" id="portfolio">
+        <h2 class="section__title">Work_</h2>
+
+        <!-- <div class="project__categories">
+          <button class="category__btn text-xs active-work" data-filter="all">
+            ALL
+          </button>
+          <button class="category__btn text-xs" data-filter=".app">
+            MOBILE APPS
+          </button>
+          <button class="category__btn text-xs" data-filter=".web">
+            WEB-SITES
+          </button>
+          <button class="category__btn text-xs" data-filter=".landing">
+            LANDING PAGES
+          </button>
+        </div> -->
+
+        <!-- <div class="projects__container grid">
+          <div class="project__item grid mix app">
+            <img src="assets/img/project-1.png" alt="" class="project__img" />
+
+            <div class="project__data">
+              <h3 class="project__title text-lg">
+                TicTacToeGame
+              </h3> 
+              <p class="project__description">
+                TicTacToe using Jack Language. A TicTacToe game is developed using Jack Language. The Minmax method is used
+                in this game to determine the computer's move.Initial computer moves might take a while on slower machines due
+                to the thorough search. The addition of more difficulty levels, such as easy and medium, would be a fantastic
+                addition to this project.
+              </p>
+              <h4 class="project__stack text-xs">USED Languages</h4>
+              <ul class="tags text-sm">
+                <li>html</li>
+                <li>css</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="C:\Users\saisandeep\Desktop\FSD\FPTicTacToe.html" class="project__link text-sm">Tic Tac Toe</a>
+            </div>  
+          </div>
+          <div class="project__item grid mix web">
+            <img src="assets/img/project-2.png" alt="" class="project__img" />
+
+            <div class="project__data">
+              <h3 class="project__title text-lg">
+                WEB APP PAGE FOR TRAVEL COMPANY
+              </h3>
+              <p class="project__description">
+                Do answered bachelor occasion in of offended no concerns. Supply
+                worthy warmth branch of no ye. Voice tried known to as my to.
+                Though wished merits or be. Alone visit use these smart rooms
+                ham.
+              </p>
+              <h4 class="project__stack text-xs">USED Languages</h4>
+              <ul class="tags text-sm">
+                <li>html</li>
+                <li>css</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="" class="project__link text-sm">www.superapp.com</a>
+            </div>
+          </div>
+
+          <div class="project__item grid mix landing">
+            <img src="assets/img/project-3.png" alt="" class="project__img" />
+
+            <div class="project__data">
+              <h3 class="project__title text-lg">
+                ADMIN TEMPLATE FOR PHOTO SERVICE
+              </h3>
+              <p class="project__description">
+                Do answered bachelor occasion in of offended no concerns. Supply
+                worthy warmth branch of no ye. Voice tried known to as my to.
+                Though wished merits or be. Alone visit use these smart rooms
+                ham.
+              </p>
+              <h4 class="project__stack text-xs">USED Languages</h4>
+              <ul class="tags text-sm">
+                <li>html</li>
+                <li>css</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="" class="project__link text-sm">www.superapp.com</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="carousel_container">
+          <h1>Projects</h1>
+          <section id="carouselSection">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+      
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="C:\Users\saisandeep\Desktop\FSD\16601185.jpg" alt="Image 1" class="carousel-image">
+                  <div class="carousel-caption">
+                    <a href="C:\Users\saisandeep\Desktop\FSD\FPTicTacToe.html">
+                      <strong>Tic Tac Toe</strong> 
+                    </a>
+                    <h3>TIC TAC TOE</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="C:\Users\saisandeep\Desktop\FSD\wordleimg.jpeg" alt="Image 2">
+                  <div class="carousel-caption">
+                    <a href="C:\Users\saisandeep\Desktop\FSD\FPWordle\FPWordle\wordle.html">
+                      <strong>Wordle</strong> 
+                    </a>
+                    <h3>WORDLE</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="C:\Users\saisandeep\Desktop\FSD\rows-of-album-image-covers (1).jpg" alt="Image 3">
+                  <div class="carousel-caption">
+                    <a href="C:\Users\saisandeep\Desktop\FSD\PA.html">
+                      <strong>PhotoAlbum</strong> 
+                    </a>
+                    <h3>PHOTOALBUM</h3>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Controls -->
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="hello section container">
+        <h1>CommunityOutreach_</h1>
+        <div id="accordionSection">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-toggle"><strong>Cyber Space Awareness for Teens</strong></button>
+              <div class="accordion-content">
+                <p>As a member of the Student Social Responsibility Project at Amrita Vishwa Vidyapeetham, this project gave me a
+                  fantastic experience with students. It gave me the experience of socializing with people. Also managing the time
+                  for the sessions with respect to every class. I experienced some of the students confusion with respect to the
+                  ideas they have on their minds regarding the topic, so we managed to explain to them clearly about the topic.</p>
+                <p>This project also gave me the management of an entire group of people. This interaction with students and their
+                  thoughts took me back to my school days. Without this team coordination, we wouldn't have done this project
+                  successfully and on time.</p>
+              </div>
+            </div>
+            <h3 class="resume__title text-sm"><strong>SSR</strong></h3>
+            <div class="accordion-item">
+              <button class="accordion-toggle"><strong>Cleanup Drive</strong></button>
+              <div class="accordion-content">
+                <p>Collected distinct types of waste such as hard plastics, soft plastics, and paper materials.</p>
+              </div>
+            </div>
+            <h3 class="resume__title text-sm"><strong>Ayudh-Amritapuri</strong></h3>
+            <!-- Add more accordion items here -->
+          </div>
+        </div>
+      </section>
+      <section class="hello section container">
+        <h2 class="section__title">Interests_</h2>
+        <p class="hello__details text-lg">
+          <ul class="arrow-list">
+            <li><strong>Machine Learning.</strong> </li>
+            <li><strong>Computer Vision.</strong> </li>
+          </ul>
+        </p>
+      </section>
+      <!--=============== Testimonials ===============-->
+      <!-- <section class="testimonials section"></section> -->
+
+      <!--=============== Blog ===============-->
+      <!-- <section class="blog section container" id="blog"></section> -->
+
+      <!--=============== Contact ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__content container">
+          <h2 class="section_title" style="color: white;"> Get in touch_ </h2>
+
+          <div class="contact__container grid">
+            <div class="contact__info">
+              <dl class="contact__list">
+                <dt>Phone:</dt>
+                <dd>8 (234) 456-33-33</dd>
+                <!-- <dt>Skype:</dt>
+                <dd>ianivanovivan</dd> -->
+                <dt>Email:</dt>
+                <dd>saisandeeptamiri@gmail.com</dd>
+              </dl>
+              <ul class="contact__socials">
+                <li>
+                  <a href=""
+                  class="contact__social-link">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/sai-sandeep-926317213/" class="contact__social-link">LinkedIN</a>
+                </li>
+                <li>
+                  <a href="https://github.com/TSaiSandeep" class="contact__social-link">Github</a>
+                </li>
+              </ul>  
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!--=============== Style Switcher ===============-->
+    <div class="style__switcher"></div>
+
+    <!--=============== Mixitup ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== Swiper Js ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--=============== Email Js ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== Js ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== Common ===============-->
+    <script src="assets/js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <title>My_Profile</title>
@@ -470,4 +1056,4 @@
   
     </body>
     </div>
-</html>
+</html> -->
